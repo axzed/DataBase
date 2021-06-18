@@ -1,0 +1,871 @@
+{
+  "paper": {
+    "name": "A4",
+    "leftMargin": 0.5,
+    "rightMargin": 0.5,
+    "topMargin": 0.5,
+    "bottomMargin": 0.5,
+    "isPortriat": true
+  },
+  "modelVersion": 2.01,
+  "defaultSchema": "Default",
+  "server": {
+    "objectType": "Server_LOGICAL",
+    "name": "Default",
+    "schemas": [
+      {
+        "objectType": "Schema_LOGICAL",
+        "name": "Default",
+        "tables": [
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "house.billsinf",
+            "comment": "",
+            "oldName": "billsinf",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "danhao",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 15,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "danhao"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "roomnum",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "roomnum"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "predianbiao",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 15,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "predianbiao"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "dianbiao",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 15,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "dianbiao"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "preshuibiao",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 15,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "preshuibiao"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "shuibiao",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 15,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "shuibiao"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "jine",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 20,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "jine"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "danhao"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "house.caiwu",
+            "comment": "",
+            "oldName": "caiwu",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "bianhao",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 20,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "bianhao"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "leixing",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 2,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "leixing"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "jine",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 15,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "jine"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "date",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 12,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "date"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "bianhao"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "house.manageruser",
+            "comment": "",
+            "oldName": "manageruser",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "user",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 20,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "user"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "password",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 20,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "password"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "user"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "house.othersetting",
+            "comment": "",
+            "oldName": "othersetting",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "bianhao",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "bianhao"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "shuiprice",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "shuiprice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "dianprice",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "dianprice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "wangprice",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "wangprice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "wuyeprice",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "wuyeprice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "yue",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "yue"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "bianhao"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "house.roominf",
+            "comment": "",
+            "oldName": "roominf",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "num",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "num"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "weizhi",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 30,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "weizhi"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "mingzi",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 20,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "mingzi"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "zhonglei",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "zhonglei"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "mianji",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 11,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "mianji"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "zhuangxiu",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 4,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "zhuangxiu"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "sheshi",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 20,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "sheshi"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "yongtu",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 4,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "yongtu"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "jiage",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 11,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "jiage"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "zhuangtai",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 4,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "zhuangtai"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "beizhu",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 40,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "beizhu"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "num"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "house.roomrent",
+            "comment": "",
+            "oldName": "roomrent",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "roomnum",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "roomnum"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "sfznum",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 18,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "sfznum"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "starttime",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 12,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "starttime"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "monthnum",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 4,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "monthnum"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "monthlyrent",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 20,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "monthlyrent"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "roominfyueshu",
+                "fields": [
+                  "roomnum"
+                ],
+                "referencedSchema": "",
+                "referencedTable": "house.roominf",
+                "referencedFields": [
+                  "num"
+                ],
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "comment": "",
+                "oldName": "roominfyueshu"
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "userinfyueshu",
+                "fields": [
+                  "sfznum"
+                ],
+                "referencedSchema": "",
+                "referencedTable": "house.userinf",
+                "referencedFields": [
+                  "sfzid"
+                ],
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "comment": "",
+                "oldName": "userinfyueshu"
+              }
+            ],
+            "indexes": [
+              {
+                "objectType": "Index_LOGICAL",
+                "name": "userinfyueshu",
+                "fields": [
+                  "sfznum"
+                ],
+                "type": "Default",
+                "comment": "",
+                "oldName": "userinfyueshu"
+              }
+            ],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "roomnum",
+                "sfznum"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "house.userinf",
+            "comment": "",
+            "oldName": "userinf",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "sfzid",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 18,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "sfzid"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "username",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 10,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "username"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "xingbie",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 2,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "xingbie"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "dianhua",
+                "type": "NATIONAL CHARACTER VARYING",
+                "length": 14,
+                "decimals": -2147483648,
+                "isNullable": false,
+                "defaultType": "Others",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "dianhua"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "sfzid"
+              ],
+              "oldName": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "diagrams": [
+    {
+      "name": "Diagram 1",
+      "paperWidth": 1,
+      "paperHeight": 1,
+      "tableFont": "Arial Unicode MS",
+      "tableFontSize": 14,
+      "isBalckWhite": false,
+      "showDBSchemaName": false,
+      "showViewRelations": true,
+      "notation": "default",
+      "showFieldComment": false,
+      "showTableComment": false,
+      "shapes": [
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.billsinf",
+          "x": 30,
+          "y": 350,
+          "width": 312,
+          "height": 190,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.caiwu",
+          "x": 30,
+          "y": 610,
+          "width": 289,
+          "height": 130,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.manageruser",
+          "x": 390,
+          "y": 610,
+          "width": 296,
+          "height": 90,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.othersetting",
+          "x": 410,
+          "y": 350,
+          "width": 301,
+          "height": 170,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.roominf",
+          "x": 760,
+          "y": 20,
+          "width": 300,
+          "height": 270,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.roomrent",
+          "x": 390,
+          "y": 80,
+          "width": 310,
+          "height": 150,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.userinf",
+          "x": 40,
+          "y": 90,
+          "width": 297,
+          "height": 130,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        }
+      ],
+      "layers": [],
+      "relations": [
+        {
+          "name": "roominfyueshu",
+          "sourceTableName": "house.roomrent",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 715,
+              "y": 160
+            },
+            {
+              "x": 745,
+              "y": 160
+            }
+          ],
+          "label": {
+            "x": 711,
+            "y": 162,
+            "width": 110,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "userinfyueshu",
+          "sourceTableName": "house.roomrent",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 375,
+              "y": 160
+            },
+            {
+              "x": 352,
+              "y": 160
+            }
+          ],
+          "label": {
+            "x": 391,
+            "y": 162,
+            "width": 102,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
+      "viewRelations": []
+    }
+  ]
+}

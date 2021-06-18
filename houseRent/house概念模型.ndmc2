@@ -1,0 +1,286 @@
+{
+  "paper": {
+    "name": "A4",
+    "leftMargin": 0.5,
+    "rightMargin": 0.5,
+    "topMargin": 0.5,
+    "bottomMargin": 0.5,
+    "isPortriat": true
+  },
+  "modelVersion": 2.01,
+  "defaultSchema": "Default",
+  "server": {
+    "objectType": "Server_CONCEPTUAL",
+    "name": "Default",
+    "schemas": [
+      {
+        "objectType": "Schema_CONCEPTUAL",
+        "name": "Default",
+        "tables": [
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "house.billsinf",
+            "oldName": "billsinf",
+            "foreignKeys": []
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "house.caiwu",
+            "oldName": "caiwu",
+            "foreignKeys": []
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "house.manageruser",
+            "oldName": "manageruser",
+            "foreignKeys": []
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "house.othersetting",
+            "oldName": "othersetting",
+            "foreignKeys": []
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "house.roominf",
+            "oldName": "roominf",
+            "foreignKeys": []
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "house.roomrent",
+            "oldName": "roomrent",
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_CONCEPTUAL",
+                "name": "roominfyueshu",
+                "referencedSchema": "",
+                "referencedTable": "house.roominf",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "roominfyueshu"
+              },
+              {
+                "objectType": "ForeignKey_CONCEPTUAL",
+                "name": "userinfyueshu",
+                "referencedSchema": "",
+                "referencedTable": "house.userinf",
+                "sourceCardinality": "ZeroOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": "userinfyueshu"
+              }
+            ]
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "house.userinf",
+            "oldName": "userinf",
+            "foreignKeys": []
+          }
+        ]
+      }
+    ]
+  },
+  "diagrams": [
+    {
+      "name": "Diagram 1",
+      "paperWidth": 1,
+      "paperHeight": 1,
+      "tableFont": "Arial Unicode MS",
+      "tableFontSize": 14,
+      "isBalckWhite": false,
+      "showDBSchemaName": false,
+      "showViewRelations": true,
+      "notation": "crowsfoot",
+      "showFieldComment": false,
+      "showTableComment": false,
+      "shapes": [
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.billsinf",
+          "x": 30,
+          "y": 30,
+          "width": 150,
+          "height": 80,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.caiwu",
+          "x": 30,
+          "y": 180,
+          "width": 150,
+          "height": 80,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.manageruser",
+          "x": 30,
+          "y": 330,
+          "width": 163,
+          "height": 80,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.othersetting",
+          "x": 250,
+          "y": 30,
+          "width": 156,
+          "height": 80,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.roominf",
+          "x": 420,
+          "y": 480,
+          "width": 150,
+          "height": 80,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.roomrent",
+          "x": 220,
+          "y": 480,
+          "width": 150,
+          "height": 80,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "house.userinf",
+          "x": 30,
+          "y": 480,
+          "width": 150,
+          "height": 80,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        }
+      ],
+      "layers": [],
+      "relations": [
+        {
+          "name": "roominfyueshu",
+          "sourceTableName": "house.roomrent",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 385,
+              "y": 520
+            },
+            {
+              "x": 405,
+              "y": 520
+            }
+          ],
+          "label": {
+            "x": 381,
+            "y": 522,
+            "width": 110,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "userinfyueshu",
+          "sourceTableName": "house.roomrent",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 205,
+              "y": 520
+            },
+            {
+              "x": 195,
+              "y": 520
+            }
+          ],
+          "label": {
+            "x": 221,
+            "y": 522,
+            "width": 102,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
+      "viewRelations": []
+    }
+  ]
+}
